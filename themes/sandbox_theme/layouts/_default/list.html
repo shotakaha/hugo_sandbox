@@ -2,7 +2,24 @@
   <h1 class="title">{{ .Title }}</h1>
   {{ .Content }}
   {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
+  <article class="block">
+    <div class="card">
+
+      <div class="card-content">
+        <div class="content">
+          <h2 class="card-header-title">{{ .LinkTitle }}</h2>
+          <time datetime="2016-1-1">{{ .Date }}</time>
+        </div>
+
+        <div class="content">
+          {{ .Summary }}
+        </div>
+      </div>
+
+      <footer class="card-footer">
+        <a href="{{ .RelPermalink }}" class="card-footer-item">Read More</a>
+      </footer>
+    </div>
+  </article>
   {{ end }}
 {{ end }}
