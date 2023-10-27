@@ -2,7 +2,7 @@
 title = 'Creating new Hugo theme'
 date = 2023-02-15T10:00:00-07:00
 draft = false
-tags = ['red','green']
+tags = ["theme", "hugo_new"]
 +++
 
 Hugoにはテーマ機能があります。

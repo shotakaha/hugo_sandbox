@@ -2,7 +2,7 @@
 title = 'Creating new Hugo site'
 date = 2023-01-15T09:00:00-07:00
 draft = false
-tags = ["red", "hugo", "hugo_new"]
+tags = ["hugo", "hugo_new"]
 +++
 
 Hugoを使ってウェブサイトを作成してみます。
