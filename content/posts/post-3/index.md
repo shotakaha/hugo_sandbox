@@ -1,9 +1,14 @@
 +++
-title = 'Post 3'
+title = 'Creating a leaf-bundled content'
 date = 2023-03-15T11:00:00-07:00
 draft = false
 tags = ['red','green','blue']
 +++
+
+この記事は``Leaf Bundle``コンテンツです。
+ここに表示されているのは``/content/posts/post-3/index.md``に書かれた内容です。
+
+つまり、メインページは``index.md``に記述され、同じディレクトリにリソース（`$.Resources`）で参照できるファイルが同梱されています。
 
 Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.
 

@@ -1,10 +1,38 @@
 +++
-title = 'Post 1'
+title = 'Creating new Hugo site'
 date = 2023-01-15T09:00:00-07:00
 draft = false
-tags = ['red']
+tags = ["red", "hugo", "hugo_new"]
 +++
 
-Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.
+Hugoを使ってウェブサイトを作成してみます。
+ゼロからサイトを構築するのは大変ですが、Hugoには``hugo new site``コマンドという初期化コマンドがあります。
 
-Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea. Anim ut duis sunt nisi. Culpa cillum sit voluptate voluptate eiusmod dolor. Enim nisi Lorem ipsum irure est excepteur voluptate eu in enim nisi. Nostrud ipsum Lorem anim sint labore consequat do.
+任意のディレクトリで実行すると、次のようなスケルトンが生成されます。
+
+```console
+$ hugo new site サイト名
+$ tree サイト名
+サイト名
+├── archetypes
+│   └── default.md
+├── assets
+├── content
+├── data
+├── hugo.toml
+├── i18n
+├── layouts
+├── static
+└── themes
+```
+
+この段階でプレビューしても何も表示されません。
+
+```console
+$ hugo server
+$ open http://localhost:1313
+```
+
+これはコンテンツを表示するためのテンプレートファイルが作成されていないためです。
+テンプレートファイルは``/layouts/``の中に作成します。
+必要なファイルをひとつずつ作成することもできますが、テーマを作成してみましょう。
